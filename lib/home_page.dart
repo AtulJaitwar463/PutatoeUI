@@ -152,7 +152,7 @@ class HomePage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   ImageButton(
-                    label: 'Mobile Recharge',
+                    label: 'Recharge',
                     imagePath: icRechargeWallet,
                     onPressed: () {
                       print('Mobile Recharge tapped');
@@ -197,7 +197,7 @@ class HomePage extends StatelessWidget {
               ),
               child: Center(
                 child: Text(
-                  "Popular Products",
+                   "Popular Products",
                   style: TextStyle(
                     color: Colors.teal,
                     fontSize: 20,
@@ -247,7 +247,7 @@ class HomePage extends StatelessWidget {
                         _buildProductItem(
                           name: 'Frooty',
                           price: '\$2.50',
-                          image: 'assets/frooti.jpeg',
+                          image: 'assets/beverages/frooti.jpeg',
                           unit: '250ml',
                           discount: '10%',
                         ),
@@ -255,7 +255,7 @@ class HomePage extends StatelessWidget {
                         _buildProductItem(
                           name: 'Coca Cola',
                           price: '\$1.99',
-                          image: 'assets/cocacola.jpeg',
+                          image: 'assets/beverages/cocacola.jpeg',
                           unit: '500ml',
                           discount: '5%',
                         ),
@@ -263,7 +263,7 @@ class HomePage extends StatelessWidget {
                         _buildProductItem(
                           name: 'Pepsi',
                           price: '\$1.75',
-                          image: 'assets/pepsi.jpeg',
+                          image: 'assets/beverages/pepsi.jpeg',
                           unit: '330ml',
                           discount: '15%',
                         ),
@@ -273,6 +273,292 @@ class HomePage extends StatelessWidget {
                 ],
               ),
             ),
+            SizedBox(height: 10),
+
+            Container(
+              padding: EdgeInsets.all(10),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        'Grocery',
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextButton(
+                        onPressed: () {
+                          // Implement action for "View All" button
+                        },
+                        child: Text(
+                          'View All',
+                          style: TextStyle(
+                            color: Colors.teal,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+
+                  SizedBox(height: 16),
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child:
+                    Row(
+                      children: [
+                        _buildProductItem(
+                          name: 'Badam',
+                          price: '\$2.50',
+                          image: 'assets/groceryImages/badam.png',
+                          unit: '1 Kg',
+                          discount: '10%',
+                        ),
+                        SizedBox(width: 16),
+                        _buildProductItem(
+                          name: 'Cashew',
+                          price: '\$1.99',
+                          image: 'assets/groceryImages/kaju.jpeg',
+                          unit: '500ml',
+                          discount: '5%',
+                        ),
+                        SizedBox(width: 16),
+                        _buildProductItem(
+                          name: 'Kismis',
+                          price: '\$1.75',
+                          image: 'assets/groceryImages/kismis.jpeg',
+                          unit: '330ml',
+                          discount: '15%',
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(height: 10),
+
+            Container(
+              padding: EdgeInsets.all(10),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        'Fruits',
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextButton(
+                        onPressed: () {
+                          // Implement action for "View All" button
+                        },
+                        child: Text(
+                          'View All',
+                          style: TextStyle(
+                            color: Colors.teal,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+
+                  SizedBox(height: 16),
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child:
+                    Row(
+                      children: [
+                        _buildProductItem(
+                          name: 'Apple',
+                          price: '\$2.50',
+                          image: 'assets/fruitsImage/apple.png',
+                          unit: '250ml',
+                          discount: '10%',
+                        ),
+                        SizedBox(width: 16),
+                        _buildProductItem(
+                          name: 'Grapes',
+                          price: '\$1.99',
+                          image: 'assets/fruitsImage/grapes.png',
+                          unit: '500ml',
+                          discount: '5%',
+                        ),
+                        SizedBox(width: 16),
+                        _buildProductItem(
+                          name: 'Bannana',
+                          price: '\$1.75',
+                          image: 'assets/fruitsImage/bannana.png',
+                          unit: '330ml',
+                          discount: '15%',
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(height: 10),
+
+            Container(
+              padding: EdgeInsets.all(10),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        'Dairy Products',
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextButton(
+                        onPressed: () {
+                          // Implement action for "View All" button
+                        },
+                        child: Text(
+                          'View All',
+                          style: TextStyle(
+                            color: Colors.teal,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+
+                  SizedBox(height: 16),
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child:
+                    Row(
+                      children: [
+                        _buildProductItem(
+                          name: 'Lassi',
+                          price: '\$2.50',
+                          image: 'assets/dairyImages/lassi.jpeg',
+                          unit: '250ml',
+                          discount: '10%',
+                        ),
+                        SizedBox(width: 16),
+                        _buildProductItem(
+                          name: 'Curd',
+                          price: '\$1.99',
+                          image: 'assets/dairyImages/curd.jpeg',
+                          unit: '500ml',
+                          discount: '5%',
+                        ),
+                        SizedBox(width: 16),
+                        _buildProductItem(
+                          name: 'Paneer',
+                          price: '\$1.75',
+                          image: 'assets/dairyImages/paneer.jpeg',
+                          unit: '330ml',
+                          discount: '15%',
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(height: 10),
+
+            Container(
+              padding: EdgeInsets.all(10),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        'Vegetables',
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextButton(
+                        onPressed: () {
+                          // Implement action for "View All" button
+                        },
+                        child: Text(
+                          'View All',
+                          style: TextStyle(
+                            color: Colors.teal,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+
+                  SizedBox(height: 16),
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child:
+                    Row(
+                      children: [
+                        _buildProductItem(
+                          name: 'Onion',
+                          price: '\$2.50',
+                          image: 'assets/vegetablesImages/onion.png',
+                          unit: '500 gm',
+                          discount: '10%',
+                        ),
+                        SizedBox(width: 16),
+                        _buildProductItem(
+                          name: 'Gobi',
+                          price: '\$1.99',
+                          image: 'assets/vegetablesImages/gobi.png',
+                          unit: '1 kg',
+                          discount: '5%',
+                        ),
+                        SizedBox(width: 16),
+                        _buildProductItem(
+                          name: 'Mattor',
+                          price: '\$1.75',
+                          image: 'assets/vegetablesImages/mattor.png',
+                          unit: '500gm',
+                          discount: '15%',
+                        ),
+                        SizedBox(width: 16),
+                        _buildProductItem(
+                          name: 'Tomato',
+                          price: '\$1.75',
+                          image: 'assets/vegetablesImages/tamatar.png',
+                          unit: '500gm',
+                          discount: '15%',
+                        ),
+                        SizedBox(width: 16),
+                        _buildProductItem(
+                          name: 'Broccoli',
+                          price: '\$1.75',
+                          image: 'assets/vegetablesImages/broccoli.png',
+                          unit: '500gm',
+                          discount: '15%',
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+
+
 
 
           ],
